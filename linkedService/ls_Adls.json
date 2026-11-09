@@ -1,0 +1,10 @@
+{
+	"name": "ls_Adls",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://storagedfpronani.dfs.core.windows.net/"
+		}
+	}
+}
