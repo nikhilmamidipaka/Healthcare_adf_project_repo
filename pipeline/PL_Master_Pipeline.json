@@ -26,7 +26,7 @@
 				}
 			},
 			{
-				"name": "Source to Silver Postgres ADLS",
+				"name": "Source to Silver ADLS",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"policy": {
@@ -59,7 +59,7 @@
 						]
 					},
 					{
-						"activity": "Source to Silver Postgres ADLS",
+						"activity": "Source to Silver ADLS",
 						"dependencyConditions": [
 							"Succeeded"
 						]
