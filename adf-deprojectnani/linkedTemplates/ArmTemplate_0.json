@@ -1199,6 +1199,23 @@
 										],
 										"scriptBlockExecutionTimeout": "02:00:00"
 									}
+								},
+								{
+									"name": "Update pipeline as failed",
+									"type": "Fail",
+									"dependsOn": [
+										{
+											"activity": "Ingest from Source to Silver",
+											"dependencyConditions": [
+												"Failed"
+											]
+										}
+									],
+									"userProperties": [],
+									"typeProperties": {
+										"message": "Inner pipeline failed",
+										"errorCode": "500"
+									}
 								}
 							]
 						}
@@ -1260,7 +1277,7 @@
 						}
 					},
 					{
-						"name": "Source to Silver Postgres ADLS",
+						"name": "Source to Silver ADLS",
 						"type": "ExecutePipeline",
 						"dependsOn": [],
 						"policy": {
@@ -1293,7 +1310,7 @@
 								]
 							},
 							{
-								"activity": "Source to Silver Postgres ADLS",
+								"activity": "Source to Silver ADLS",
 								"dependencyConditions": [
 									"Succeeded"
 								]
