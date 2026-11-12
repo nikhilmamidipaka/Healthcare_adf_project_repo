@@ -8,7 +8,7 @@
 			},
 			"env": {
 				"type": "string",
-				"value": "Env"
+				"value": "DEV"
 			}
 		}
 	},
