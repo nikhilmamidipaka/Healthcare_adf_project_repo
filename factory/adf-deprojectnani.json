@@ -1,0 +1,12 @@
+{
+	"name": "adf-deprojectnani",
+	"properties": {
+		"globalParameters": {
+			"email_recepient": {
+				"type": "string",
+				"value": "nikhilm7007@gmail.com"
+			}
+		}
+	},
+	"location": "eastus"
+}
